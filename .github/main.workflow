@@ -16,6 +16,6 @@ action "GitHub Action for Docker" {
 }
 
 action "shell" {
-  uses = "ubuntu@16.04"
+  uses = "./action-a/"
   runs = "ls -alh"
 }
