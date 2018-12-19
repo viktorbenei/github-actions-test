@@ -1,3 +1,3 @@
-FROM ubuntu:16.04
+FROM bitriseio/docker-android
 
 RUN ls -alh
