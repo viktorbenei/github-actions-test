@@ -17,5 +17,5 @@ action "GitHub Action for Docker" {
 
 action "shell" {
   uses = "./action-a/"
-  runs = "ls -alh"
+  runs = "bitrise version"
 }
