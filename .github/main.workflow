@@ -1,6 +1,10 @@
 workflow "New workflow" {
   on = "push"
-  resolves = ["GitHub Action for npm", "GitHub Action for Docker"]
+  resolves = [
+    "GitHub Action for npm",
+    "GitHub Action for Docker",
+    "shell",
+  ]
 }
 
 action "GitHub Action for npm" {
@@ -9,4 +13,9 @@ action "GitHub Action for npm" {
 
 action "GitHub Action for Docker" {
   uses = "actions/docker/cli@76ff57a"
+}
+
+action "shell" {
+  uses = "ubuntu@16.04"
+  runs = "ls -alh"
 }
