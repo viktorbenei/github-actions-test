@@ -17,4 +17,5 @@ workflows:
             set -ex
 
             df -kh
-            top
+
+            free
