@@ -18,4 +18,4 @@ workflows:
 
             df -kh
 
-            free
+            free -h
